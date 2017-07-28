@@ -13,7 +13,7 @@
 	--text-color: #333;
 
 	--blue: #00a8f0;
-    --dark-blue: #007db3;
+	--dark-blue: #007db3;
 
 	--green: #11df11;
 	--dark-green: #0dab0f;
@@ -21,7 +21,7 @@
 	--red: #f00000;
 	--dark-red: #b00000;
 
-    --radius: 3px;
+	--radius: 3px;
 }
 
 html {
@@ -60,7 +60,7 @@ html {
 	flex-grow: 1;
 }
 .flex.center {
-    align-items: center;
+	align-items: center;
 }
 
 .inline {
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: var(--blue);
+	color: var(--blue);
 }
 a.stealth:not(:hover) {
 	color: inherit;
@@ -157,7 +157,7 @@ a:active {
 	color: inherit;
 }
 .button.icon {
-    padding: .05em;
+	padding: .05em;
 }
 
 /* commented until needed
@@ -176,7 +176,7 @@ a:active {
 
 table {
 	width: 100%;
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
 table th, table td {
 	padding: .2em;
@@ -206,7 +206,7 @@ table.bordered tfoot th {
 
 	padding: var(--card-spacing);
 	box-shadow: 0 1px 2px var(--shadow);
-    background: white;
+	background: white;
 	border-radius: var(--radius);
 }
 .card > * {
@@ -220,7 +220,7 @@ table.bordered tfoot th {
 	margin-bottom: var(--card-spacing);
 	padding: var(--card-spacing);
 	box-shadow: 0 1px 1px var(--shadow-light);
-    line-height: 1;
+	line-height: 1;
 }
 .card > .header:first-child {
 	border-radius: var(--radius) var(--radius) 0 0;
