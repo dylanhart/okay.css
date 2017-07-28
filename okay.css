@@ -55,7 +55,7 @@ html {
 .flex.between {
 	justify-content: space-between;
 }
-.flex.stretch > * {
+.flex.stretch > *, .flex-grow {
 	flex-grow: 1;
 }
 .flex.center {
@@ -106,6 +106,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .biggest, h1 {
 	font-size: 2em;
+}
+
+a {
+    color: var(--blue);
+}
+a.stealth:not(:hover) {
+	color: inherit;
+}
+a:active {
+	color: var(--dark-blue);
 }
 
 .button {
