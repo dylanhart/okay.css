@@ -1,0 +1,212 @@
+/* okay.css - it's okay css */
+
+* {
+	/* sane sizing */
+	box-sizing: border-box;
+}
+
+:root {
+	--light-gray: #f0f0f0;
+	--shadow: #666;
+	--shadow-light: #aaa;
+	--text-color: #333;
+
+	--blue: #00a8f0;
+    --dark-blue: #007db3;
+
+	--green: #11df11;
+	--dark-green: #0dab0f;
+
+	--red: #f00000;
+	--dark-red: #b00000;
+
+    --radius: 3px;
+}
+
+html {
+	background-color: var(--light-gray);
+	font-family: Menlo, Monaco, monospace;
+	color: var(--text-color);
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+}
+.container > * {
+	margin-bottom: 1em;
+}
+
+.flex {
+	display: flex;
+}
+.flex.gap {
+	--flex-gap: .5rem;
+}
+.flex.wide.gap {
+	--flex-gap: 1rem;
+}
+.flex.gap > :not(:first-child) {
+	margin-left: var(--flex-gap);
+}
+.flex.around {
+	justify-content: space-around;
+}
+.flex.between {
+	justify-content: space-between;
+}
+.flex.stretch > * {
+	flex-grow: 1;
+}
+.flex.center {
+    align-items: center;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.align-top {
+	vertical-align: top;
+}
+.align-middle {
+	vertical-align: middle;
+}
+.align-bottom {
+	vertical-align: bottom;
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.smaller, h6 {
+	font-size: .6em;
+}
+.small, h5 {
+	font-size: .75em;
+}
+.normal, h4 {
+	font-size: 1em;
+}
+.big, h3 {
+	font-size: 1.25em;
+}
+.bigger, h2 {
+	font-size: 1.5em;
+}
+.biggest, h1 {
+	font-size: 2em;
+}
+
+.button {
+	padding: .5em;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+	line-height: 1;
+
+	box-shadow: 0 1px 2px var(--shadow);
+	border-radius: var(--radius);
+	background-color: white;
+
+	transition: all .05s linear;
+}
+.button:hover:not(:active) {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 2px var(--shadow);
+}
+.button:active {
+	background: var(--light-gray);
+}
+.button.blue:active {
+	background: var(--dark-blue);
+}
+.button.green:active {
+	background: var(--dark-green);
+}
+.button.red:active {
+	background: var(--dark-red);
+}
+.button.clear {
+	box-shadow: 0 0 0 var(--shadow);
+}
+.button.clear:not(:hover) {
+	background: transparent;
+	color: inherit;
+}
+.button.icon {
+    padding: .05em;
+}
+
+/* commented until needed
+.merge > .button:not(.clear) {
+	box-shadow: 0 1px 2px -1px var(--shadow);
+}
+.merge > .button:not(:first-child) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.merge > .button:not(:last-child) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+*/
+
+.card {
+	--card-spacing: .5rem;
+
+	padding: var(--card-spacing);
+	box-shadow: 0 1px 2px var(--shadow);
+    background: white;
+	border-radius: var(--radius);
+}
+.card > * {
+	margin: 0 0 var(--card-spacing) 0;
+}
+.card > :last-child {
+	margin-bottom: 0;
+}
+.card > .header {
+	margin: calc(-1 * var(--card-spacing));
+	margin-bottom: var(--card-spacing);
+	padding: var(--card-spacing);
+	box-shadow: 0 1px 1px var(--shadow-light);
+    line-height: 1;
+}
+.card > .header:first-child {
+	border-radius: var(--radius) var(--radius) 0 0;
+}
+.card > .footer {
+	margin: calc(-1 * var(--card-spacing));
+	margin-top: var(--card-spacing);
+	padding: var(--card-spacing);
+	box-shadow: 0 -1px 1px var(--shadow-light);
+	line-height: 1;
+}
+.card > .footer:first-child {
+	border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.blue {
+	color: white;
+	background: var(--blue);
+}
+.green {
+	color: white;
+	background: var(--green);
+}
+.red {
+	color: white;
+	background: var(--red);
+}
