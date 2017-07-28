@@ -6,6 +6,7 @@
 }
 
 :root {
+	--gray: #aaa;
 	--light-gray: #f0f0f0;
 	--shadow: #666;
 	--shadow-light: #aaa;
@@ -172,6 +173,26 @@ a:active {
 	border-bottom-right-radius: 0;
 }
 */
+
+table {
+	width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+	padding: .2em;
+}
+table thead th {
+	border-bottom: 2px solid var(--text-color);
+}
+table tfoot th {
+	border-top: 2px solid var(--text-color);
+}
+table tr:not(:last-of-type) td {
+	border-bottom: 1px solid var(--gray);
+}
+table.striped tr:nth-child(2n) {
+	background: var(--light-gray);
+}
 
 .card {
 	--card-spacing: .5rem;
