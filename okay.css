@@ -239,6 +239,13 @@ table.bordered tfoot th {
 	border-radius: 0 0 var(--radius) var(--radius);
 }
 
+.gap-after {
+	margin-bottom: .5rem;
+}
+.gap-after.wide {
+	margin-bottom: 1rem;
+}
+
 .blue {
 	color: white;
 	background: var(--blue);
