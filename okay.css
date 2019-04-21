@@ -93,22 +93,22 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 }
 
-.smaller, h6 {
+.smaller, .button.smaller, h6 {
 	font-size: .6em;
 }
-.small, h5 {
+.small, .button.small, h5 {
 	font-size: .75em;
 }
-.normal, h4 {
+.normal, .button.normal, h4 {
 	font-size: 1em;
 }
-.big, h3 {
+.big, .button.big, h3 {
 	font-size: 1.25em;
 }
-.bigger, h2 {
+.bigger, .button.bigger, h2 {
 	font-size: 1.5em;
 }
-.biggest, h1 {
+.biggest, .button.biggest, h1 {
 	font-size: 2em;
 }
 
